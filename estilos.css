@@ -1,5 +1,7 @@
 .grid_container {
   display: grid;
+  font-family: "Inter";
+  font-weight: 400;
   gap: 10px;
   max-width: 1440px;
   grid-template-columns: auto auto auto auto;
@@ -9,27 +11,39 @@
 .grid_container > div {
   background-color: #F5F7FF;
   text-align: center;
-  padding: 20px;
   border-radius: 10px;
   margin: 0px 8px 0px 8px;
+  padding: 20px 0px 20px 0px;
 }
 .grid_container > div p.number {
   color: #1E202A;
   font-size: 50px;
+  font-weight: 700;
+  margin: 20px 0px 0px 0px;
 }
 .grid_container > div p.followers {
   color: #1E202A;
+  margin: 0px 0px 20px 0px;
 }
 .grid_container > div .update-green {
+  display: flex;
+  justify-content: center;
   color: #1DB489;
   font-weight: bold;
 }
 .grid_container > div .update-red {
+  display: flex;
+  justify-content: center;
   color: #DC414C;
   font-weight: bold;
 }
-.grid_container > div .icone-adjustment {
-  padding-right: 10px;
+.grid_container > div .logo-user {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  color: #63687E;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */

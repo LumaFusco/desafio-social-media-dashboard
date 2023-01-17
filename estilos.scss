@@ -8,6 +8,8 @@ $vermelho: #DC414C;
 
 .grid_container{
   display: grid;
+  font-family: "Inter";
+  font-weight: 400;
   gap: 10px;
   max-width: 1440px;
   grid-template-columns: auto auto auto auto;
@@ -17,32 +19,43 @@ $vermelho: #DC414C;
 .grid_container>div{
     background-color:$cinza-claro;
     text-align: center;
-    padding: 20px;
     border-radius: 10px;
     margin: 0px 8px 0px 8px;
+    padding: 20px 0px 20px 0px;
     
     p.number{
         color:$preto;
         font-size: 50px;
+        font-weight: 700;
+        margin: 20px 0px 0px 0px;
     }
 
     p.followers{
         color: $preto;
+        margin: 0px 0px 20px 0px;
     }
 
     .update-green{
-        color:#1DB489;
+        display: flex;
+        justify-content: center;
+        color:$verde;
         font-weight: bold;
     }
 
     .update-red{
+        display: flex;
+        justify-content: center;
         color: $vermelho;
         font-weight: bold;
     }
 
-     .icone-adjustment{
-    padding-right: 10px;
-    
+     .logo-user{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 20px;   
+        color: $cinza-escuro;
+        font-weight: bold;
     }
 
 
