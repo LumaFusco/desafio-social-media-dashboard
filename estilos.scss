@@ -1,0 +1,49 @@
+//LIGHT THEME//
+$cinza-claro: #F5F7FF;
+$cinza-escuro: #63687E;
+$branco:#FFFFFF;
+$preto: #1E202A;
+$verde: #1DB489;
+$vermelho: #DC414C;
+
+.grid_container{
+  display: grid;
+  gap: 10px;
+  max-width: 1440px;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 30px 40px 30px;
+}
+
+.grid_container>div{
+    background-color:$cinza-claro;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 8px 0px 8px;
+    
+    p.number{
+        color:$preto;
+        font-size: 50px;
+    }
+
+    p.followers{
+        color: $preto;
+    }
+
+    .update-green{
+        color:#1DB489;
+        font-weight: bold;
+    }
+
+    .update-red{
+        color: $vermelho;
+        font-weight: bold;
+    }
+
+     .icone-adjustment{
+    padding-right: 10px;
+    
+    }
+
+
+}

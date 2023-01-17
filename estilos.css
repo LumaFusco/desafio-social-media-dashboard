@@ -1,0 +1,35 @@
+.grid_container {
+  display: grid;
+  gap: 10px;
+  max-width: 1440px;
+  grid-template-columns: auto auto auto auto;
+  margin: 40px 30px 40px 30px;
+}
+
+.grid_container > div {
+  background-color: #F5F7FF;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 8px 0px 8px;
+}
+.grid_container > div p.number {
+  color: #1E202A;
+  font-size: 50px;
+}
+.grid_container > div p.followers {
+  color: #1E202A;
+}
+.grid_container > div .update-green {
+  color: #1DB489;
+  font-weight: bold;
+}
+.grid_container > div .update-red {
+  color: #DC414C;
+  font-weight: bold;
+}
+.grid_container > div .icone-adjustment {
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
