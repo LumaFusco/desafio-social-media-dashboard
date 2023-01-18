@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="dark-mode">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <!--link fonte-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <!--link folha de estilo css-->
-  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./novoestilo.css">
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -20,15 +21,31 @@
 <body>
 
   <header>
-    Social Media Dashboard
-    Total Followers: 23,004
-    Dark Mode
+    <div class="container_header">
+      <div class="titulo_total">
+        <div class="titulo_total_titulo">
+          Social Media Dashboard<br>
+        </div>
+        <div class="titulo_total_total">
+        Total Followers: 23,004
+      </div>
+    </div>
+
+
+    <div class="buttom_darkmode">
+     <label for="switch">
+      <input type="checkbox" id="switch"> Dark Mode
+     </label>
+    </div>
+
+
   </header>
 
   <main>
 
     <div class="grid_container">
       <div class="div" style="border-top: 5px solid hsl(208, 92%, 53%);">
+        
         <div class="logo-user">
           <div class="logo">
             <img class="icone-adjustment" style="padding-right:5px;" src="./images/icon-facebook.svg"
@@ -107,7 +124,8 @@
       <div class="div" style="border-top: 5px solid hsl(348, 97%, 39%);">
         <div class="logo-user">
           <div class="logo">
-            <img class="icone-adjustment" style="padding-right:5px;" src="./images/icon-youtube.svg" alt="icone instagram">
+            <img class="icone-adjustment" style="padding-right:5px;" src="./images/icon-youtube.svg"
+              alt="icone instagram">
           </div>
           <div class="user">
             Natan F.
@@ -130,48 +148,231 @@
 
     </div>
 
-    <!-------------------------------------------------->
+    <!--------------------------------------->
 
-    Overview - Today
+    <h1 class="titulo_today">Overview - Today</h1>
 
-    Page Views
-    87
-    3%
+    <div class="grid_container_2">
+      <!--------------------DIV 1------------------------------>
 
-    Likes
-    52
-    2%
+      <div class="div">
 
-    Likes
-    5462
-    2257%
+        <div class="title_icon">
+          <div class="title">
+            <p>Page Views</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-facebook.svg" style="padding-right: 10px;" alt="icone facebook">
+          </div>
+        </div>
 
-    Profile Views
-    52k
-    1375%
+        <div class="number_ranking">
+          <div class="number">
+            87
+          </div>
+          <div class="ranking_green">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-up.svg"
+              alt="icone up">
+            3%
+          </div>
+        </div>
 
-    Retweets
-    117
-    303%
+      </div>
 
-    Likes
-    507
-    553%
 
-    Likes
-    107
-    19%
+      <!--------------------DIV 2------------------------------>
+      <div class="div">
 
-    Total Views
-    1407
-    12%
+        <div class="title_icon">
+          <div class="title">
+            <p>Likes</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-facebook.svg" alt="icone facebook">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            52
+          </div>
+          <div class="ranking_red">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-down.svg"
+              alt="icone up">
+            2%
+          </div>
+        </div>
+
+      </div>
+      <!--------------------DIV 3------------------------------>
+      <div class="div">
+
+        <div class="title_icon">
+          <div class="title">
+            <p>Likes</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-instagram.svg" alt="icone instagram">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            5462
+          </div>
+          <div class="ranking_green">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-up.svg"
+              alt="icone up">
+            2257%
+          </div>
+        </div>
+
+      </div>
+
+      <!--------------------DIV 4------------------------------>
+
+      <div class="div">
+
+        <div class="title_icon ">
+          <div class="title">
+            <p>Profile Views</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-instagram.svg" alt="icone instagram">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            52k
+          </div>
+          <div class="ranking_green">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-up.svg"
+              alt="icone up">
+            1375%
+          </div>
+        </div>
+
+      </div>
+
+      <!--------------------final----------------------------->
+
+    </div>
+
+
+    <div class="grid_container_2">
+      <!--------------------DIV 2------------------------------>
+
+      <div class="div">
+
+        <div class="title_icon">
+          <div class="title">
+            <p>Retweets</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-twitter.svg" style="padding-right: 10px;" alt="icone twitter">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            117
+          </div>
+          <div class="ranking_green">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-up.svg"
+              alt="icone up">
+            303%
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--------------------DIV 2------------------------------>
+      <div class="div">
+
+        <div class="title_icon">
+          <div class="title">
+            <p>Likes</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-twitter.svg" alt="icone twitter">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            507
+          </div>
+          <div class="ranking_red">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-down.svg"
+              alt="icone up">
+            557%
+          </div>
+        </div>
+
+      </div>
+      <!--------------------DIV 3------------------------------>
+      <div class="div">
+
+        <div class="title_icon">
+          <div class="title">
+            <p>Likes</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-youtube.svg" alt="icone youtube">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            107
+          </div>
+          <div class="ranking_red">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-down.svg"
+              alt="icone up">
+            19%
+          </div>
+        </div>
+
+      </div>
+
+      <!--------------------DIV 4------------------------------>
+
+      <div class="div">
+
+        <div class="title_icon ">
+          <div class="title">
+            <p>Total Views</p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-youtube.svg" alt="icone youtube">
+          </div>
+        </div>
+
+        <div class="number_ranking">
+          <div class="number">
+            1407
+          </div>
+          <div class="ranking_red">
+            <img class="icone-adjustment" style="padding-right:6px; padding-bottom: 3px;" src="./images/icon-down.svg"
+              alt="icone up">
+            12%
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
+    <script src="./script.js"></script>
+</body>
 
-  <div class="attribution">
+<footer>
+  <div class="atribuicoes">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/lumafusco/">Luma Fusco</a>.
   </div>
-</body>
+</footer>
 
 </html>
